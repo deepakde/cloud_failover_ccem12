@@ -42,6 +42,14 @@ We run virtual machines on the commodity infrastructure and present a cloud inte
 \section{Introduction}
 \label{sec:intro}
 \cite{agesen_vmm_benchmarking}
+Cloud computing has emerged as a successful computing paradigm in the form of IaaS, PaaS and SaaS for efficient use and sharing of computing infrastructure. Shared infrastructure includes hardware in form of servers, storage, network, physical infrastructure in form of datacenter space, racks, cooling, power and software in the form of OS/ middleware, specialized  applications. By swapping dedicated infrastructure - hardware, physical, software- for shared infrastrcutrue, significant CAPEX cost reduction can be achieved. Instead of one time high initial investment in the infrastructure, cloud computing model enables reduced service payments based on the usage.
+
+Cloud computing model requires ensuring efficient use of the shared infrastructure- which could be mix of high end / highly scalable dedicated servers/ storage/ network switches as well as commodity/ older hardware like desktop PCs, local harddisks. Typically desktops PC usage is limited in terms of time of day as well of days of the month. By making use of such hardware during low usage period, cloud computing model can keep infrastructure investmnent to minimum and still provide requires compute/ storage/network resources to applications. These are very relevant and applicable scenarioss in academic institutions, sofwatere dev/test environmnts and organizations with infrastructure setups across the world in different time zones. In case of academic institutions, the cloud worloads can use dedicated department data center plus desktops PCs across labs and departments which are likely to be idle after working hours. Similarly, software dev/ test organizations may have older hardware that can be used to run automated workloads like builds/ automated tests etc.
+
+Key challaneges with commodity infrastructure is reliability. There are higher chance of desktops PCs, internal disk drives failing either due to quality, age or unreliable power/ network connectibity. In cases of a failure of server, the workloads must be started on a different server and continue from the same step. 
+
+In this paper, we explore challenges in using commodity hardware to handle workloads in cloud and propose the approach to address the challanges.
+
 \section{Virtual Machine Record Replay}
 \label{sec:record_replay}
 \section{Redundancy and Failover in Cloud}
